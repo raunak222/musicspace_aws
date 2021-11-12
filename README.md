@@ -16,7 +16,7 @@ To install all dependencies, use :
 > npm install
 
 To run app locally, use :
-> node app.js
+> npm start
 
 <br>
 <br>
