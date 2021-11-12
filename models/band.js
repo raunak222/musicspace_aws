@@ -31,6 +31,7 @@ const bandschema = new Schema ({
     price: Number,
     description: String,
     location: String,
+    email: String,
     youtubeUrl: String,
     author: {
         type: Schema.Types.ObjectId,

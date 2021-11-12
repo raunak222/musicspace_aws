@@ -7,6 +7,7 @@ module.exports.bandschema = Joi.object({
         price: Joi.number().required().max(200),
         //image: Joi.string().required(),
         youtubeUrl: Joi.string().required(),
+        email: Joi.string().required(),
         location: Joi.string().required(),
         description: Joi.string().required()
     }).required(),
