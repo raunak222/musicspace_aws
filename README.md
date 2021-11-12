@@ -8,7 +8,7 @@
 - [Mapbox](https://www.mapbox.com/) is used for geolocation identification.
 - [heroku](https://www.heroku.com/) is used for application deployment.
 - [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) is used for Database.
-- Website link = https://safe-tundra-61913.herokuapp.com/
+- Website link = https://quiet-depths-68319.herokuapp.com/
 
 ___
 
