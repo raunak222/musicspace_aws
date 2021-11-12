@@ -2,7 +2,7 @@
 
 ## Functionalities
 - A user can perform CRUD functionality on band
-- A user can rate and review a band
+- A user can rate,review and hire a band
 - User Authentication
 - [Cloudinary](https://cloudinary.com/) is used for cloud storage.
 - [Mapbox](https://www.mapbox.com/) is used for geolocation identification.
