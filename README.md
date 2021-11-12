@@ -8,7 +8,7 @@
 - [Mapbox](https://www.mapbox.com/) is used for geolocation identification.
 - [heroku](https://www.heroku.com/) is used for application deployment.
 - [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) is used for Database.
-- Website link = https://quiet-depths-68319.herokuapp.com/
+- Website link = http://musicspace-env.eba-iuite4g8.us-east-1.elasticbeanstalk.com/
 
 ___
 
