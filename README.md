@@ -1,4 +1,4 @@
-#  band Project
+#  The MusicSpace
 
 ## Functionalities
 - A user can perform CRUD functionality on band
