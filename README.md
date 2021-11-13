@@ -21,4 +21,4 @@ To run app locally, use :
 <br>
 <br>
 
-![Project Image](https://res.cloudinary.com/dfaye2roi/image/upload/v1636723916/YelpCamp/Home_page_xokf2s.jpg)
+![Project Image](https://res.cloudinary.com/dfaye2roi/image/upload/v1636723916/Bands/Home_page_xokf2s.jpg)
