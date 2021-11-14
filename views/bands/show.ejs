@@ -6,7 +6,7 @@
             <div class="carousel-inner">
                 <% band.images.forEach((img, i) => {  %>
                 <div class="carousel-item <%= i === 0 ? 'active' : ''%>">
-                    <img src="<%= img.url%>" class="d-block w-100" alt="" height="400">
+                    <img src="<%= img.url%>" class="img-fluid" alt="" height="400">
                 </div>
                 <% }) %>
 
@@ -34,7 +34,7 @@
                 <li class="list-group-item">Price $<%= band.price%>/night</li>
                 <li class="list-group-item">Contact: &nbsp; <%= band.email%></li>
                 <!-- <li class="list-group-item">Youtube <a href="<%= band.youtubeUrl%>"><%= band.youtubeUrl%></a></li> -->
-                <li class="list-group-item"><span>Youtube Demo</span> <br><br> <iframe width="420" height="315" src="<%= band.youtubeUrl%>" frameborder="0" allowfullscreen></iframe></li>
+                <li class="list-group-item"><span>Youtube Demo</span> <br><br> <iframe width=80% height="315" src="<%= band.youtubeUrl%>" frameborder="0" allowfullscreen></iframe></li>
             </ul>
             <%  if( currentUser && band.author.equals(currentUser._id))  {%>
             <div class="card-body">
