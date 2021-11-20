@@ -6,48 +6,99 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>MusicSpace</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
         integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
     <link rel="stylesheet" href="/stylesheets/home.css">
     <link rel="stylesheet" href="/stylesheets/style.css">
+   
+    
+
+  <!-- Vendor CSS Files -->
+  <link href="/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    
 </head>
 
 <body class="d-flex text-center text-white bg-white">
     <div class="d-flex w-100 h-100  mx-auto flex-column">
-        <!-- ======= Header ======= -->
-        <header id="header" class="d-flex align-items-center">
-            <div class="container d-flex align-items-center justify-content-between">
-                <h1 class="logo">MusicSpace</h1>
-                <!-- Uncomment below if you prefer to use an image logo -->
-                <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt=""></a>-->
-            <nav id="navbar" class="navbar ">
-                <ul>
-                    <li><a class="nav-link scrollto active" href="#">Home</a></li>
-                    <li><a class="nav-link" href="/bands">Bands</a></li>
-                    <li><a class="nav-link scrollto" href="#services">Services</a></li>
-                    <% if(!currentUser) { %>
-                    <li><a class="nav-link" href="/login">Login</a></li>
-                    <li><a class="nav-link" href="/register">Register</a></li>
-                    <% } else { %>
-                    <li><a class="nav-link" href="/logout">Logout</a></li>
-                    <% } %>
-                    </ul>
-                    <i class="bi bi-list mobile-nav-toggle"></i>
-            </nav><!-- .navbar -->
-        </div>
-        </header><!-- End Header -->
- 
-        <main class="main">
-            <div class="spac">
-                <div class="sp" data-aos="zoom-out" data-aos-delay="100">
-                    <h1> Welcome to MusicSpace!</h1>
-                    <p> Explore the World of Music. <br>
-                        Feel free to Join as a Band or Hire Music Bands for Events!</p>
-                    <a href="/bands" class="btn btn-lg btn-secondary font-weight-bold border-white bg-white">View
-                        Music Bands</a>
-                </div>
+     <nav class="navbar sticky-top navbar-expand-lg navbar-dark"  style="background-color: black">
+      <div class="container-fluid" id="header">
+          <h1 class="logo" href="#">MusicSpace</h1>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                  <li><a class="nav-link active" href="/">Home</a></li>
+                  <li><a class="nav-link" href="/bands">Bands</a></li>
+                  <li><a class="nav-link" href="#services">Services</a></li>
+                  <% if(!currentUser) {%>
+                  <li><a class="nav-link" href="/login">Login</a></li>
+                  <li><a class="nav-link" href="/register">Register</a></li>
+                  <% } else {%>
+                  <li><a class="nav-link" href="/logout">Logout</a></li>
+                  <% } %>
+              </div>
+          </div>
+      </div>
+     </nav>
+     <main class="main">
+        <div class="spac">
+            <div class="sp" data-aos="zoom-out" data-aos-delay="100">
+              <h1> Welcome to MusicSpace!</h1>
+                <p> Explore the World of Music. <br>
+                      Feel free to Join as a Band or Hire Music Bands for Events!</p>
+                  <a href="/bands" class="btn btn-lg btn-secondary font-weight-bold border-white" style="background-color: black">View
+                    Music Bands</a>
+              </div>
             </div>        
-            <!-- start here   -->
+             <!-- ======= Featured Services Section ======= -->
+    <section id="services" class="featured-services">
+        <div class="container" data-aos="fade-up">
+            <div class="section-title">
+              <h2>Services</h2>
+              <h3><span>Check our Services</span></h3>
+              <p class="description">Choose from our Services, We promise We won't be disappoint you.</p>
+            </div>
+          <div class="row">
+            <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
+              <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+                <div class="icon"><i class="fas fa-briefcase"></i></div>
+                <h4 class="title"><a href="/bands">Hire with Us</a></h4>
+                <p class="description">Hire Local or International bands with genuine reviews and reasonable price.</p>
+              </div>
+            </div>
+  
+            <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
+              <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+                <div class="icon"><i class="fas fa-guitar"></i></div>
+                <h4 class="title"><a href="/bands/new">Join as a Band</a></h4>
+                <p class="description">Join us as a band whether you are famous or starting out, we are here for you.</p>
+              </div>
+            </div>
+  
+            <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
+              <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+                <div class="icon"><i class="fa fa-thumbs-up"></i></div>
+                <h4 class="title"><a href="/bands">Rate and Review Bands</a></h4>
+                <p class="description">Rate the bands and Tell us what you think about our bands</p>
+              </div>
+            </div>
+  
+  
+          </div>
+  
+        </div>
+      </section><!-- End Featured Services Section -->
+  
         </main>
 
         <footer class="text-secondary">
@@ -66,6 +117,17 @@
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="/javascript/main.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+      <!-- Vendor JS Files -->
+    <script src="/assets/vendor/aos/aos.js"></script>
+    <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="/assets/vendor/php-email-form/validate.js"></script>
+    <script src="/assets/vendor/purecounter/purecounter.js"></script>
+    <script src="/assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="/assets/vendor/waypoints/noframework.waypoints.js"></script>
     <script>
         AOS.init();
     </script>
