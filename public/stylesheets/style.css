@@ -113,17 +113,7 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
-#header {
-  background:rgb(0, 0, 0);
-  transition: all 0.5s;
-  z-index: 997;
-  height: 60px;
-  box-sizing: border-box;
-}
-#header.fixed-top {
-  height: 70px;
-}
-#header .logo {
+.logo {
   font-size: 30px;
   margin: 0;
   padding-left: 20px;
@@ -133,6 +123,17 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0.8px;
   font-family: "Poppins", sans-serif;
 }
+#header {
+  background:rgb(0, 0, 0);
+  transition: all 0.5s;
+  z-index: 997;
+  height: 45px;
+  box-sizing: border-box;
+}
+#header.fixed-top {
+  height: 70px;
+}
+
 #header .logo a {
   color: #222222;
 }
